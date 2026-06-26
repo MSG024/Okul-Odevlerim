@@ -1,0 +1,3 @@
+SELECT UrunAdi, Fiyat
+FROM URUNLER
+WHERE Fiyat > (SELECT AVG(Fiyat) FROM URUNLER);
